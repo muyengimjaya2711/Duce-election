@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DUCE DARUSO Election 2026/27</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0b3d91;
+        }
+
+        label {
+            font-weight: bold;
+            color: #0b3d91;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .icon {
+            color: #0b3d91;
+            margin-right: 8px;
+        }
+
+        .radio-group {
+            margin-bottom: 15px;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            display: block;
+            margin: 5px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #0b3d91;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #062c6f;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1><i class="fas fa-vote-yea"></i> DARUSO Election 2026/27</h1>
+
+    <form>
+
+        <!-- Voter Name -->
+        <label><i class="fas fa-user icon"></i>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <!-- Registration Number -->
+        <label><i class="fas fa-id-card icon"></i>Registration Number</label>
+        <input type="text" placeholder="Enter Reg Number" required>
+
+        <!-- Post Selection -->
+        <label><i class="fas fa-briefcase icon"></i>Select Post</label>
+        <select required>
+            <option value="">-- Choose Post --</option>
+            <option>Chairperson</option>
+            <option>Vice Chairperson</option>
+            <option>Secretary General</option>
+            <option>Finance Secretary</option>
+        </select>
+
+        <!-- Contestants -->
+        <label><i class="fas fa-users icon"></i>Select Contestant</label>
+
+        <div class="radio-group">
+            <label><input type="radio" name="contestant"> John Mushi</label>
+            <label><input type="radio" name="contestant"> Amina Said</label>
+            <label><input type="radio" name="contestant"> Kelvin Joseph</label>
+            <label><input type="radio" name="contestant"> Neema Paul</label>
+        </div>
+
+        <!-- Voting Place -->
+        <label><i class="fas fa-map-marker-alt icon"></i>Voting Location</label>
+        <select required>
+            <option value="">-- Select Location --</option>
+            <option>Main Hall</option>
+            <option>Library Block</option>
+            <option>Science Building</option>
+            <option>ICT Lab</option>
+        </select>
+
+        <button type="submit"><i class="fas fa-check-circle"></i> Submit Vote</button>
+
+    </form>
+
+    <div class="footer">
+        <p><i class="fas fa-shield-alt"></i> Your vote is confidential</p>
+    </div>
+</div>
+
+</body>
+</html>
